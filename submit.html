@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Records of 2022 - What Are Yours?</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="mystyles.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: rgb(146, 146, 199); font-size: x-large"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          style="
+            padding: 5px;
+         "
+        >
+          <img
+            src="images/site logo.png"
+            alt="2022"
+            width="200"
+            style="margin-right: 8px; border-radius: 5%;"
+            class="d-inline-block align-text-center"
+          /></a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="music.html">THE LIST</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="submit.html">Submit Your Faves</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 2.3em">
+      <h1 style="margin-bottom: 0.7em">NAME YOUR FAVES</h1>
+      <form>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >How do you primarily listen to music?</label
+            >
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">Physical Media</option>
+            <option value="2">Streaming</option>
+            <option value="3">Music files on my device</option>
+          </select>
+        </div>
+
+        <p>What is your favorite release of 2022?</p>
+
+        <div class="form-row" style="margin-bottom: 1.6em">
+          <div class="col-sm-4">
+            <input type="text" class="form-control" placeholder="Artist Name" />
+          </div>
+          <div class="col-sm-4">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Release Name"
+            />
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <label for="basic-url" class="form-label">Link to listen</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">https://</span>
+            <input
+              type="text"
+              class="form-control"
+              id="basic-url"
+              aria-describedby="basic-addon3"
+            />
+          </div>
+        </div>
+
+        <div class="col-sm-5">
+          <div class="input-group">
+            <span class="input-group-text">What makes you love it?</span>
+            <textarea
+              class="form-control"
+              aria-label="With textarea"
+            ></textarea>
+          </div>
+        </div>
+
+        <input class="btn btn-dark" type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
